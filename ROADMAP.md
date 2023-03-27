@@ -3,13 +3,13 @@
 3. http
 4. database
 5. utils
-    - pid [x]
+   - pid [x]
 6. build
-    - pex
-    - pyinstaller/pyapp
-    - rpm
-    - cython
-    - pyOxydizer
+   - pex
+   - pyinstaller/pyapp
+   - rpm
+   - cython
+   - pyOxydizer
 7. tests
 8. docs
 9. repo
@@ -18,3 +18,6 @@
 
 <!-- UML диаграммы связей
 Конфиг и класс - все приложение -->
+
+https://github.com/frolpaxa/mockitto/blob/master/test.py
+https://github.com/frolpaxa/core

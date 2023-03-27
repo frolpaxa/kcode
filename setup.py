@@ -4,11 +4,11 @@ from os.path import join, dirname
 
 setup(
     name="kcode",
-    version="1.0.0",
+    version="1.1.0",
     packages=find_packages(),
     author="Pavel Frolov",
     author_email="pfrol007@gmail.com",
-    description="King-code package",
+    description="King-code library",
     long_description_content_type="text/markdown",
     long_description=open(join(dirname(__file__), "README.md")).read(),
     url="https://github.com/frolpaxa/kcode",
@@ -18,4 +18,8 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
+    project_urls={
+        "Documentation": "https://kcode.readthedocs.io",
+        "Source": "https://github.com/frolpaxa/kcode",
+    },
 )
