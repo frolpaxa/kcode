@@ -7,7 +7,7 @@ copyright = "2023, Pavel Frolov"
 author = "frolpaxa"
 
 release = "0.1"
-version = "1.0.0"
+version = "0.1.0"
 
 # -- General configuration
 

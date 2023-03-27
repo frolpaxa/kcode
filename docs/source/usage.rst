@@ -75,7 +75,7 @@ The ``pid`` parameter is a process id.
 For example:
 
 >>> from kcode.utils.pid import Pid
->>> Pid(None).check(:pid)
+>>> Pid.check(:pid)
 Killed
 
 Kill process
@@ -91,5 +91,5 @@ The ``pid`` parameter is a process id.
 For example:
 
 >>> from kcode.utils.pid import Pid
->>> Pid(None).kill(:pid)
+>>> Pid.kill(:pid)
 Killed
