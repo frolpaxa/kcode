@@ -4,7 +4,7 @@ from os.path import join, dirname
 
 setup(
     name="kcode",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(),
     author="Pavel Frolov",
     author_email="pfrol007@gmail.com",
