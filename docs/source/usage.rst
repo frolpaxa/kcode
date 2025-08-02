@@ -12,10 +12,9 @@ To use kcode, first install it using pip:
 
    (.venv) $ pip install kcode
 
-Pid
-===
-
 .. currentmodule:: kcode.utils.pid
+
+.. rubric:: Pid API
 
 .. autoclass:: Pid
    :members: create_pid_file, get_pid_files, delete_pid_files, check, kill
