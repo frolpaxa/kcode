@@ -15,84 +15,81 @@ To use kcode, first install it using pip:
 Pid
 ===
 
+.. automodule:: kcode.utils.pid
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Create pid files
 ----------------
 
-To create pid,
-you can use the ``create_pid_file(:name, :quantity)`` function:
+To create pid files,
+you can use the ``create_pid_file(name, quantity)`` method of the `Pid` class:
 
-The ``name`` parameter sets a unique name.
-The ``quantity`` parameter limits the number of instances created.
+- ``name`` sets a unique identifier.
+- ``quantity`` limits the number of allowed instances.
 
-.. autofunction:: kcode.utils.pid
+**Example:**
 
-For example:
+.. code-block:: python
 
->>> from kcode.utils.pid import Pid
->>> Pid('app_name', quantity=2).create_pid_file()
-(2740, '/tmp/app_name.pid.02e6c8b3-f6c3-4be9-b741-682c56283731')
+   from kcode.utils.pid import Pid
+   Pid("app_name", quantity=2).create_pid_file()
 
 
 Get pid files
-----------------
+-------------
 
 To retrieve a list of pid files,
-you can use the ``get_pid_files()`` function:
+use the ``get_pid_files()`` method:
 
-.. autofunction:: kcode.utils.pid
+**Example:**
 
-For example:
+.. code-block:: python
 
->>> from kcode.utils.pid import Pid
->>> Pid('app_name').get_pid_files()
-[{'pid': 3634, 'file': '/tmp/app_name.pid.4651f1b5-b438-4f5d-bf3d-257c6e5c5228'}]
+   from kcode.utils.pid import Pid
+   Pid("app_name").get_pid_files()
 
 
 Delete pid files
 ----------------
 
-To delete a pid files,
-you can use the ``delete_pid_files(:pid_files)`` function:
+To delete PID files,
+use the ``delete_pid_files(pid_files)`` method, where `pid_files` is a list returned from `get_pid_files()`:
 
-The ``pid_files`` parameter list of received files ``get_pid_files()``.
+**Example:**
 
-.. autofunction:: kcode.utils.pid
+.. code-block:: python
 
-For example:
+   from kcode.utils.pid import Pid
+   pid_instance = Pid("app_name")
+   pid_files = pid_instance.get_pid_files()
+   pid_instance.delete_pid_files(pid_files)
 
->>> from kcode.utils.pid import Pid
->>> Pid('app_name').delete_pid_files(Pid('app_name').get_pid_files())
-[{'pid': 2740, 'file': '/tmp/app_name.pid.02e6c8b3-f6c3-4be9-b741-682c56283731'}]
 
+Check if pid exists
+-------------------
 
-Check pid exists
-----------------
+To check whether a given process ID is alive,
+use the static method ``Pid.check(pid)``:
 
-To check existing pid,
-you can use the ``check(:pid)`` function:
+**Example:**
 
-The ``pid`` parameter is a process id.
+.. code-block:: python
 
-.. autofunction:: kcode.utils.pid
+   from kcode.utils.pid import Pid
+   Pid.check(12345)
 
-For example:
-
->>> from kcode.utils.pid import Pid
->>> Pid.check(:pid)
-Killed
 
 Kill process
-----------------
+------------
 
-To kill pid,
-you can use the ``kill(:pid)`` function:
+To kill a process by PID,
+use the static method ``Pid.kill(pid)``:
 
-The ``pid`` parameter is a process id.
+**Example:**
 
-.. autofunction:: kcode.utils.pid
+.. code-block:: python
 
-For example:
-
->>> from kcode.utils.pid import Pid
->>> Pid.kill(:pid)
-Killed
+   from kcode.utils.pid import Pid
+   Pid.kill(12345)
