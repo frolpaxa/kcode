@@ -7,7 +7,9 @@ Create pid files
 ----------------
 
 To create pid files, use the ``create_pid_file(name, quantity)`` method:
-`quantity` - the maximum number of allowed PID files.
+
+- ``name`` – a unique identifier for the PID file set.
+- ``quantity`` – the maximum number of allowed PID files.
 
 .. code-block:: python
 
