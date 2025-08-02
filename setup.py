@@ -1,6 +1,6 @@
-from setuptools import setup, find_packages
-from os.path import join, dirname
+from os.path import dirname, join
 
+from setuptools import find_packages, setup
 
 setup(
     name="kcode",
@@ -21,5 +21,11 @@ setup(
     project_urls={
         "Documentation": "https://kcode.readthedocs.io",
         "Source": "https://github.com/frolpaxa/kcode",
+    },
+    extras_require={
+        "docs": [
+            "sphinx",
+            "sphinx_rtd_theme",
+        ]
     },
 )
