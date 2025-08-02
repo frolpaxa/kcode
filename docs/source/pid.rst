@@ -3,21 +3,15 @@ Pid
 
 .. currentmodule:: kcode.utils.pid
 
-.. autoclass:: Pid
-   :members: create_pid_file, get_pid_files, delete_pid_files, check, kill
-   :undoc-members:
-   :show-inheritance:
-
 Create pid files
 ----------------
 
-To create pid files,
-you can use the ``create_pid_file(name, quantity)`` method:
+To create pid files, use the ``create_pid_file(name, quantity)`` method:
 
 .. code-block:: python
 
    from kcode.utils.pid import Pid
-   Pid(\"app_name\", quantity=2).create_pid_file()
+   Pid("app_name", quantity=2).create_pid_file()
 
 Get pid files
 -------------
@@ -25,7 +19,7 @@ Get pid files
 .. code-block:: python
 
    from kcode.utils.pid import Pid
-   Pid(\"app_name\").get_pid_files()
+   Pid("app_name").get_pid_files()
 
 Delete pid files
 ----------------
@@ -33,7 +27,7 @@ Delete pid files
 .. code-block:: python
 
    from kcode.utils.pid import Pid
-   Pid(\"app_name\").delete_pid_files(pid_files)
+   Pid("app_name").delete_pid_files(pid_files)
 
 Check if pid exists
 -------------------
