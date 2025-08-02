@@ -12,6 +12,9 @@ To use kcode, first install it using pip:
 
    (.venv) $ pip install kcode
 
+Pid
+===
+
 Create pid files
 ----------------
 

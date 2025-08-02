@@ -1,23 +1,18 @@
-1. logging
-2. cron
-3. http
-4. database
-5. utils
+1. mock https://github.com/frolpaxa/mockitto/
+2. logging
+3. cron
+4. http
+5. database
+6. utils
    - pid [x]
-6. build
+7. build
    - pex
    - pyinstaller/pyapp
    - rpm
    - cython
    - pyOxydizer
-7. tests
-8. docs
-9. repo
-10. command line tools (create, build, update, setup, publish)
-11. web tools (create, build, update, setup, publish)
-
-<!-- UML диаграммы связей
-Конфиг и класс - все приложение -->
-
-https://github.com/frolpaxa/mockitto/blob/master/test.py
-https://github.com/frolpaxa/core
+8. tests
+9. docs
+10. repo
+11. command line tools (create, build, update, setup, publish)
+12. web tools (create, build, update, setup, publish)

@@ -1,5 +1,5 @@
 # King code
 
-#### Software that makes life easier.
+#### A small project to make something a bit more convenient.
 
 [Documentation](https://kcode.readthedocs.io/)

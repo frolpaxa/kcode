@@ -3,11 +3,11 @@
 # -- Project information
 
 project = "kcode"
-copyright = "2023, Pavel Frolov"
+copyright = "2025, Pavel Frolov"
 author = "frolpaxa"
 
-release = "0.1"
-version = "0.1.1"
+release = "0.2"
+version = "0.1.2"
 
 # -- General configuration
 
