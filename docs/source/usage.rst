@@ -12,14 +12,11 @@ To use kcode, first install it using pip:
 
    (.venv) $ pip install kcode
 
-.. currentmodule:: kcode.utils.pid
+.. toctree::
+   :hidden:
 
-.. rubric:: Pid API
+   pid_api
 
-.. autoclass:: Pid
-   :members: create_pid_file, get_pid_files, delete_pid_files, check, kill
-   :undoc-members:
-   :show-inheritance:
 
 Create pid files
 ----------------
