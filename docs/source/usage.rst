@@ -15,8 +15,10 @@ To use kcode, first install it using pip:
 Pid
 ===
 
-.. automodule:: kcode.utils.pid
-   :members:
+.. currentmodule:: kcode.utils.pid
+
+.. autoclass:: Pid
+   :members: create_pid_file, get_pid_files, delete_pid_files, check, kill
    :undoc-members:
    :show-inheritance:
 
